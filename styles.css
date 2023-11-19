@@ -1,0 +1,166 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background: linear-gradient(to right, #f5f7fa, #0f274e);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #2a3f5f;
+  /* Deep blue color */
+}
+
+/* Primary Color for Important Elements */
+a,
+.social-button,
+.navigation-menu li a:hover {
+  color: #ff7c00;
+  /* Vibrant orange color */
+}
+
+/* Updated Navigation Bar */
+.header {
+  background-color: #2a3f5f;
+  /* Deep blue color */
+  color: #fff;
+}
+
+/* Section Styling */
+section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+
+  
+}
+
+section:nth-child(even) {
+  background-color: #5b8691; /* Slightly darker for alternate sections */
+}
+
+
+
+
+/* Add more specific styling as needed */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section h1,
+section h2 {
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  header nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+
+
+/* Social Media Icons */
+.social-button {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #2a3f5f;
+  /* Deep blue color */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional styling for hover effect */
+.social-button:hover {
+  opacity: 0.9;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.instagram {
+  background-color: #e4405f;
+}
+
+.github {
+  background-color: #333; /* GitHub's color theme */
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hover effect for the button */
+.github:hover {
+  background-color: #24292e;
+}
+
+
+
+
+#education {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.education-block,
+.qualification-block {
+  margin-bottom: 20px;
+}
+
+.education-block h3,
+.qualification-block h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.qualification-block ul {
+  list-style: inside square;
+  padding-left: 20px;
+}
+
+.qualification-block li {
+  line-height: 1.6;
+}
