@@ -1,17 +1,39 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap');
 
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #333;
+  color: #ffffff;
   background: linear-gradient(to right, #f5f7fa, #0f274e); /* Subtle gradient */
 }
 
-h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
-  color: #2a3f5f; /* Deep blue color for headers */
+h2 {
+  text-align: center;
 }
-
 /* Primary Color for Important Elements */
 a, .social-button, .navigation-menu li a:hover {
   color: #ff7c00; /* Vibrant orange color for interactive elements */
@@ -39,8 +61,9 @@ section:nth-child(even) {
 }
 
 section h1, section h2 {
-  color: #333; /* Consistent color for section headings */
+  color: #ffffff; /* Consistent color for section headings */
 }
+
 
 /* Responsive Design for Smaller Screens */
 @media screen and (max-width: 600px) {
@@ -50,27 +73,257 @@ section h1, section h2 {
   }
 }
 
-/* Education Section */
-#education {
-  background-color: #f9f9f9; /* Slightly different background for contrast */
-  border-radius: 8px;
+/* About me Section */
+#about-me {
+  background-color: #172a45; /* Dark background for thematic contrast */
+  color: #fff;
+  padding-top: 50px; /* Padding to push the content down a bit */
+  height: 100vh; /* 100% of the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This will center the content vertically */
+  text-align: center;
+}
+
+.about-me-content {
+  max-width: 1200px; /* Max width for the inner content */
+  width: 100%; /* Full width */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.about-me-text {
   padding: 20px;
-  margin-top: 20px;
 }
 
-.education-block, .qualification-block {
-  margin-bottom: 20px;
+.about-me-text h1 {
+  font-size: 2.5em;
+  color: #ff7c00; /* Accent color for headers */
 }
 
-.education-block h3, .qualification-block h3 {
-  color: #333; /* Consistent color for subsection headings */
+.about-me-text p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
 }
 
-.qualification-block ul {
-  list-style: inside square; /* Stylish list items */
-  padding-left: 20px;
+.about-me-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circular image */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Soft shadow for depth */
 }
 
-.qualification-block li {
-  line-height: 1.6; /* Improved line height for readability */
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  #about-me {
+      flex-direction: column; /* Stacks content vertically on smaller screens */
+      padding-top: 20px; /* Less padding on top for smaller screens */
+  }
+
+  .about-me-text, .about-me-image {
+      width: 90%; /* Full width for smaller screens with a bit of margin */
+  }
+
+  .about-me-image {
+      margin-top: 20px; /* Add some space above the image */
+  }
+}
+
+
+
+/* Education Section */
+#education-timeline {
+  background-color: #1e3768; /* Brighter blue for contrast */
+  color: #ffffff;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjusted shadow for depth */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.timeline {
+  position:relative;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ff7c00; /* Bright accent color for the line */
+}
+
+.timeline-block {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 0%;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 25px;
+  background: #ff7c00; /* Bright accent color */
+  border: 4px solid #1e3768; /* Match the brighter section background */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content {
+  padding: 10px 40px;
+  background: rgba(30, 55, 104, 0.8); /* Less transparent for better readability */
+  border-radius: 4px;
+  transition: transform 0.5s ease, background-color 0.5s ease; /* Longer transition for noticeable effect */
+}
+
+.timeline-content:hover {
+  transform: translateY(-10px); /* Increased upward movement on hover */
+  background-color: rgba(30, 55, 104, 1); /* Fully opaque background on hover */
+}
+
+.timeline-content h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em;
+  margin: 0 0 10px;
+}
+
+.timeline-content span {
+  font-size: 0.9em;
+  display: block;
+}
+
+/* Positioning the content on the sides of the timeline */
+/* existing styles... */
+
+@media (max-width: 768px) {
+  /* existing styles... */
+}
+
+#certifications {
+  background-color: #f5f7fa; /* Light background for the certifications section */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#certifications h2{
+  color:#172a45;
+  text-align: center;
+
+}
+
+
+
+
+.certification-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.certification-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px; /* Adjust the width as needed */
+}
+
+.certification-logo {
+    width: 60px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.certification-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+
+
+.certification-info p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+
+#projects {
+  padding: 40px 0;
+  text-align: center;
+  max-width: 100%;
+  background: #0f274e; /* Dark theme background for projects section */
+  color: #ffffff; /* Light text color for contrast */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px; /* Increased gap for better visual separation */
+  padding: 0;
+  margin: 0 auto; /* Center the grid container */
+}
+
+.grid-item {
+  background-color: #172a45; /* Darker box color for thematic consistency */
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* More pronounced shadow for depth */
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Ensures nothing overflows the border radius */
+}
+
+.grid-item:hover {
+  transform: scale(1.03); /* Slight scale effect on hover for interactivity */
+}
+
+.grid-item img {
+  width: 100%; /* Ensures the image takes the full width of the container */
+  height: 250px; /* Sets a fixed height for all images */
+  object-fit: contain; /* Ensures the image will be scaled to maintain its aspect ratio while fitting within the element's content box */
+  object-position: center; /* Centers the image within the element */
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1); /* Slight zoom effect on hover for the image */
+}
+
+.grid-item h3 {
+  font-size: 1.2em;
+  margin: 15px 0 5px;
+}
+
+.grid-item p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* Additional styling for project details */
+.project-details {
+  padding: 15px;
+  background: linear-gradient(to bottom, rgba(23, 42, 69, 0), rgba(23, 42, 69, 1)); /* Gradient overlay at the bottom */
+}
+
+/* Icons for visual interest */
+.project-icon {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  margin-top: -25px; /* Half of the height to offset upwards */
+  background: #ff7c00; /* Accent color for the icons */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }

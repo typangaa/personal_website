@@ -1,37 +1,36 @@
-/* Social Media Icons */
-.social-button {
-    display: inline-block;
+footer {
+    text-align: center;
     padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    background-color: #2a3f5f;
-    /* Deep blue color */
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    color: #ff7c00;
   }
-  
-  /* Additional styling for hover effect */
-  .social-button:hover {
-    opacity: 0.9;
-  }
-  
-  .linkedin {
-    background-color: #0077b5;
-  }
-  
-  .facebook {
-    background-color: #3b5998;
-  }
-  
-  .instagram {
-    background-color: #e4405f;
-  }
-  
-  .github {
-    background-color: #333; /* GitHub's color theme */
-  }
-  
-  /* Hover effect for the button */
-  .github:hover {
-    background-color: #24292e;
-  }
-  
+
+/* Social Media Icons */
+#social-media {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f7fa; /* Adjust the background color as needed */
+}
+
+.social-icons {
+    display: inline-flex;
+    gap: 20px; /* Adjust the space between icons as needed */
+    justify-content: center;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Circle size */
+    height: 50px; /* Circle size */
+    border-radius: 50%; /* Makes the link a circle */
+    overflow: hidden; /* Ensures nothing spills outside the circle */
+    background-color: #fff; /* Adjust the background color as needed */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
+}
+
+.social-icon img {
+    width: 100%;
+    height: auto; /* Keeps the aspect ratio of the image */
+}
